@@ -1,9 +1,9 @@
 module.exports = {
   semi: true,
   singleQuote: true,
+  trailingComma: 'all',
   tabWidth: 2,
-  trailingComma: "all",
+  printWidth: 100,
   bracketSpacing: true,
-  printWidth: 80,
-  arrowParens: "always"
+  arrowParens: 'always',
 };

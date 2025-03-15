@@ -8,11 +8,7 @@ interface ButtonProps {
   handleClick?: () => void;
 }
 
-export const Button = ({
-  children,
-  className,
-  handleClick = () => {},
-}: ButtonProps) => {
+export const Button = ({ children, className, handleClick = () => {} }: ButtonProps) => {
   return (
     <button className={className} onClick={handleClick}>
       {children}
