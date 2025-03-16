@@ -4,6 +4,10 @@
   "type": "module",
   "private": true,
   "main": "./base.js",
+  "scripts": {
+    "lint": "eslint . --ignore-path ../../.gitignore",
+    "typecheck": "tsc --noEmit"
+  },
   "exports": {
     "./base": "./base.js",
     "./next-js": "./next.js",

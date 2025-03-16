@@ -9,12 +9,12 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
     "prettier": "^3.5.3",
     "turbo": "^2.4.4",
-    "typescript": "5.8.2",
-    "@repo/prettier-config": "*",
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*"
+    "typescript": "5.8.2"
   },
   "engines": {
     "node": ">=18"
@@ -25,5 +25,9 @@
     "packages/*",
     "tooling/*"
   ],
-  "prettier": "@repo/prettier-config"
+  "prettier": "@repo/prettier-config",
+  "dependencies": {
+    "@types/styled-components": "^5.1.34",
+    "styled-components": "^6.1.15"
+  }
 }
