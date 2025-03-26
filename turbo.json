@@ -21,6 +21,9 @@
     "dev": {
       "dependsOn": ["^dev"],
       "cache": false
+    },
+    "format": {
+      "dependsOn": ["^format"]
     }
   }
 }

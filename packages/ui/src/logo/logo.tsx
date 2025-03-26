@@ -14,8 +14,10 @@ const StyledImgContainer = styled.div<{ width?: number; height?: number }>`
 `;
 
 const StyledImg = styled.img`
-  width: 100%;
+  width: 70%;
   height: 100%;
+  display: block;
+  margin: 0 auto;
   object-fit: contain;
 `;
 

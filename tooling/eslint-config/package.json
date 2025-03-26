@@ -4,14 +4,14 @@
   "type": "module",
   "private": true,
   "main": "./base.js",
-  "scripts": {
-    "lint": "eslint . --ignore-path ../../.gitignore",
-    "typecheck": "tsc --noEmit"
-  },
   "exports": {
-    "./base": "./base.js",
+    ".": "./base.js",
     "./next-js": "./next.js",
     "./react-internal": "./react-internal.js"
+  },
+  "scripts": {
+    "lint": "eslint . --ignore-pattern ../../.gitignore",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
