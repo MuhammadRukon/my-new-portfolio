@@ -1,14 +1,11 @@
-'use client';
-import styled from 'styled-components';
+import React from 'react';
 
-const StyledFooter = styled.footer`
-  text-align: center;
-  padding: 10px 0;
-`;
-export default function Footer(): React.ReactElement {
+export const Footer: React.FC = () => {
   return (
-    <StyledFooter>
-      <p>Muhammad Sheikh Rukon. No rights reserved.</p>
-    </StyledFooter>
+    <footer className="bg-gray-800 text-white py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-center">© 2023 Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
   );
-}
+};

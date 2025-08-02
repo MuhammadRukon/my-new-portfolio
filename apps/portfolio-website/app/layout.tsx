@@ -3,8 +3,7 @@ import React from 'react';
 import { Poppins } from 'next/font/google';
 import './global.css';
 import Header from './components/header/header';
-import Footer from '@repo/ui/footer/footer';
-import StyledJsxRegistry from '@repo/ui/registry/registry';
+import { Footer } from '@repo/ui/footer/footer';
 
 export const metadata: Metadata = {
   title: 'Muhammad Rukon',
@@ -25,20 +24,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <StyledJsxRegistry>
-          <Header />
-          <div
-            style={{
-              // minHeight: 'calc(100vh - 87.5px)',
-              minHeight: '100vh',
-              marginTop: '50px',
-            }}
-          >
-            {children}
-          </div>
+        <Header />
+        <div
+          style={{
+            // minHeight: 'calc(100vh - 87.5px)',
+            minHeight: '100vh',
+            margin: '50px 10px 10px 10px',
+          }}
+        >
+          {children}
+        </div>
 
-          <Footer />
-        </StyledJsxRegistry>
+        <Footer />
       </body>
     </html>
   );
